@@ -3,7 +3,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  console.log(action);
   if(action.type === 'TAMBAH_UMUR') {
     const newAge = state.age + 1;
     const newState = {...state, age: newAge};
